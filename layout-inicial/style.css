@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     display: flex;
@@ -55,6 +55,41 @@ header>div>input{
     height: 20%;
     margin-right: 30px;
 }
+/*formatação Main*/
+.imgMainCar{
+    height: 50%;
+    width: 100%;
+    margin-top: 5%;
+}
+main{
+    margin: auto;
+    height:70vh;
+    width: 80%;
+    text-align: justify;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 7fr 2fr;
+}
+.textPrincipal{
+    font-size: 1.1em;
+    margin-top: 2%;
+}
+.textoDois{
+grid-row-start:2 ;
+grid-column-start: 1;
+}
+.textoTres{
+grid-row-start:3 ;
+grid-column-start: 1;
+
+}
+.textPrincipal>h1,.textPrincipal>p,.textPrincipal>h2{
+    padding: 1% 0;
+}
+
+/*Formatação footer*/
 footer{
     display: flex;
     height: 10vh;;
