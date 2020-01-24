@@ -101,7 +101,8 @@ footer>a{
     align-self: center;
 }
 .imgFooter{
-    width: 9vh;
+    width: 7vh;
+    height: 7vh;
     border-radius: 50px;
 }
 footer>ul{
