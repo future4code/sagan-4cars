@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  display: flex;
+  justify-content:space-around;
+  height: 20vh;
+  width: 100vw;
+  background-color: #FF5C5C;
+}
+.textMenu{
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+header>div>img{
+  height: 80%;
+  width: auto;
+  order:-1;
+  margin-left: 5%;
+}
+.textMenu>h2{
+  margin-left: 15%;
+  font-size: 2.5em;
+}
+header>ul{
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -15%;
+}
+header>ul>a{
+  text-decoration: none;
+}
+header>ul>a>li{
+  display: inline-flex;;
+  border: 3px solid black;
+  font-size: 2em;
+  border-radius: 12px;
+  padding: 5px;
+  color: white;
+}
+header>ul>a>li:hover{
+  color: black;
+  transition: 1s;
+}
+.headerGroup{
+  display: flex;
+  align-items: center;
+}
+header>div>input{
+  width: 100%;
+  height: 20%;
+  margin-right: 30px;
+}
+
+footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+.final{
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  background-color: teal;
+}
+.final>a{
+  display: flex;
+  align-self: center;
+}
+.imgFooter{
+  width: 9vh;
+  border-radius: 50px;
+}
+.final>ul{
+  list-style: none;
+  margin-left: -10%;
+}
+
+main{
+  height: 60vh;
+}
+#barra-superior{
+  text-align: center;
+  padding: 1%;
+  width: 100%;
+  background-color: white;
+  color: #ff5c5c;
+}
+
+#comunicacao{
+  text-align: center;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 0.5%;
+}
+
+#conteudo{
+  overflow: hidden;
+}
+
+.seletor{
+  float: left;
+  width: 30%;
+  margin: 0 10%;
+  overflow: hidden;
+}
+.seletor .btn-seletor{ 
+  width: 100%;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 1%;
+  font-family: Quicksand;
+  font-size: large;
+  margin: 0;
+  background-color: inherit;
+}
+
+.seletor:hover{
+  background-color: #fce0e0;
+}
+
+.produto{
+  display: none;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  z-index: 1;
+  background-color: #fce0e0;
+}
+
+.seletor:hover .popular, .seletor:hover .popular:hover{
+  display: block;
+}
+
+.seletor:hover .luxo, .seletor:hover .luxo:hover{
+  display: block;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.container p{
+  text-align: center;
+}
+
+.texto{
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  justify-items: center;
+}
+
+.item1{
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+}
+
+.item2{
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
